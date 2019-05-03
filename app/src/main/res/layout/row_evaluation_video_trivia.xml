@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/cv_review_question_top"
+    android:layout_marginEnd="@dimen/cv_review_question_left"
+    android:layout_marginStart="@dimen/cv_review_question_left"
+    android:layout_marginTop="@dimen/cv_review_question_top">
+
+    <TextView
+        android:id="@+id/tv_question_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:drawableTint="@color/black"
+        android:text="@string/evaluation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/title_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_question_evaluation"
+        android:layout_width="@dimen/evaluation_question_image_width"
+        android:layout_height="@dimen/evaluation_question_image_height"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question_evaluation" />
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/iv_question_evaluation">
+
+        <TextView
+            android:id="@+id/tv_select_video_option_1"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/gamecard_radius_corner"
+            android:text="Select"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_option1_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_option1_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="@dimen/evaluation_options_image_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/tv_select_video_option_2"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/gamecard_radius_corner"
+            android:text="Select"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_option2_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_option2_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="@dimen/evaluation_options_image_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/tv_select_video_option_3"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/gamecard_radius_corner"
+            android:text="Select"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_option3_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_option3_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="@dimen/evaluation_options_image_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/tv_select_video_option_4"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/gamecard_radius_corner"
+            android:text="Select"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_option4_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_option4_evaluation"
+            android:layout_width="@dimen/evaluation_options_image_width"
+            android:layout_height="@dimen/evaluation_options_image_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:padding="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

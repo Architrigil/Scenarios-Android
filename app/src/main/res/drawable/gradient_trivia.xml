@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:endColor="@color/trivia_orangish_color"
+        android:gradientRadius="100%"
+        android:startColor="@color/trivia_yellowish_color"
+        android:type="radial"/>
+</shape>

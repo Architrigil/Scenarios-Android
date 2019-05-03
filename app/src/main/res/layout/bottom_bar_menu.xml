@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <item
+        android:id="@+id/iv_info"
+        android:enabled="true"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="@string/info"
+        />
+    <item
+        android:id="@+id/btn_game_review"
+        android:enabled="true"
+        android:icon="@drawable/drawable_review_button"
+        android:title="@string/review"
+        />
+    <item
+        android:id="@+id/btn_game_evaluate"
+        android:enabled="true"
+        android:icon="@drawable/drawable_evaluate_button"
+        android:title="@string/evaluate"
+        />
+    <item
+        android:id="@+id/btn_game_reference"
+        android:enabled="true"
+        android:icon="@drawable/drawable_reference_button"
+        android:title="@string/reference"
+        />
+    <item
+        android:id="@+id/btn_game_leaderboard"
+        android:enabled="true"
+        android:icon="@drawable/drawable_leader_board_button"
+        android:title="@string/leaderboard"
+        />
+</menu>
+

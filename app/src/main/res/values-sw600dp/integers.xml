@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="info_pop_up_bottom_margin">90</integer>
+    <integer name="info_pop_up_left_margin">20</integer>
+
+    <integer name="info_pop_bottom_margin">90</integer>
+    <integer name="info_pop_left_margin">20</integer>
+</resources>

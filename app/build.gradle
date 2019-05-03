@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+def getGitHash = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-parse', '--short', 'HEAD'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+android {
+    compileSdkVersion rootProject.ext.targetSdkVersion
+
+    defaultConfig {
+        applicationId "com.rigil.scenarios"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "GROUP_ID", "\"ID001\"")
+            buildConfigField("String", "APP_VALIDATION_TABLE_ID", "\"5b64b9a4a7970c08c04949b4\"")
+            buildConfigField("String", "BASE_URL", "\"http://206.205.101.52:8080/api/v1/\"")
+            buildConfigField("String", "DEV_BASE_URL", "\"http://206.205.101.39:8080/api/v1/\"")
+            buildConfigField("String", "AUTH_VALUE", "\"APIKey b81bb3eb90c2f02a59292fa297a8a974\"")
+            buildConfigField("String", "DEV_AUTH_VALUE", "\"APIKey 99fc0ae79ebd43ef99a51d56e636d889\"")
+            buildConfigField("String", "GAME_CONTENT_ID", "\"5c1019c6d105e9fe39e85c87\"")
+            buildConfigField("String", "DEV_GAME_CONTENT_ID", "\"5c19faedcab818649b5f3428\"")
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "GROUP_ID", "\"UAETrial001\"")
+            buildConfigField("String", "APP_VALIDATION_TABLE_ID", "\"5b64b9a4a7970c08c04949b4\"")
+            buildConfigField("String", "BASE_URL", "\"http://206.205.101.52:8080/api/v1/\"")
+            buildConfigField("String", "DEV_BASE_URL", "\"http://206.205.101.39:8080/api/v1/\"")
+            buildConfigField("String", "AUTH_VALUE", "\"APIKey b81bb3eb90c2f02a59292fa297a8a974\"")
+            buildConfigField("String", "DEV_AUTH_VALUE", "\"APIKey 99fc0ae79ebd43ef99a51d56e636d889\"")
+            buildConfigField("String", "GAME_CONTENT_ID", "\"5c1019c6d105e9fe39e85c87\"")
+            buildConfigField("String", "DEV_GAME_CONTENT_ID", "\"5c19faedcab818649b5f3428\"")
+        }
+
+        faa {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "GROUP_ID", "\"MATCHGAME001\"")
+            buildConfigField("String", "APP_VALIDATION_TABLE_ID", "\"5b6a159118976d6fc6fa7657\"")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains', module: 'annotations'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+
+    applicationVariants.all { variant ->
+        // Rename apk file
+        variant.outputs.all {
+            outputFileName = "${applicationId}-${variant.versionName}-${getGitHash()}-${variant.buildType.name}${variant.variantData.isSigned() ? "" : "-unsigned"}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.ext.archLifecycleVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.room:room-runtime:$rootProject.ext.roomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.ext.roomVersion"
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    implementation "com.plattysoft.leonids:LeonidsLib:$rootProject.ext.leonidsVersion"
+
+
+    // MOGCore
+    implementation("com.rigil:mogcorelib:$rootProject.ext.mogcoreVersion") {
+        transitive = true
+        exclude group: 'com.android.tools.lint', module: 'lint-gradle'
+        exclude group: 'junit', module: 'junit'
+        exclude group: 'android.arch.lifecycle', module: 'extensions'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-compiler-embeddable'
+        exclude group: 'android.arch.persistence.room:compiler', module: 'runtime'
+        exclude group: 'android.arch.persistence.room:compiler', module: 'rxjava2'
+        exclude group: "com.android.tools.build", module: 'aapt2'
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-android-extensions'
+        exclude group: 'androidx.room', module: 'room-compiler'
+        exclude group: 'androidx.room:', module: 'room-runtime'
+    }
+
+    // SGAnalytics
+    implementation("com.rigil.sganalytics:sdk:$rootProject.ext.sgAnalyticsVersion") {
+        transitive = true
+        exclude group: 'com.android.tools.lint', module: 'lint-gradle'
+        exclude group: 'junit', module: 'junit'
+        exclude group: 'android.arch.lifecycle', module: 'extensions'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-compiler-embeddable'
+        exclude group: 'android.arch.persistence.room:compiler', module: 'runtime'
+        exclude group: 'android.arch.persistence.room:compiler', module: 'rxjava2'
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-android-extensions'
+        exclude group: 'androidx.room', module: ':room-compiler'
+        exclude group: 'androidx.room:', module: 'room-runtime'
+    }
+
+    // nearby
+    implementation "com.google.android.gms:play-services-nearby:$rootProject.ext.nearbyVersion"
+}
+
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}

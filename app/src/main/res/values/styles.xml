@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/gradient_trivia</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/slide_bottom</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="SelectImageDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/gray_select_game_bg</item>
+    </style>
+
+    <style name="AlertWithBlackText" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="AlertWithBlackTextAndTransparentBackground" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="GameOverSwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@android:color/holo_blue_light</item>
+        <item name="colorSwitchThumbNormal">@android:color/holo_blue_dark</item>
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <!--<style name="GameOptionButton" parent="BaseGameButton">-->
+        <!--<item name="android:textSize">@dimen/gameoption_button_text_size</item>-->
+        <!--<item name="android:paddingLeft">5dp</item>-->
+        <!--<item name="android:paddingRight">5dp</item>-->
+        <!--<item name="android:layout_marginTop">@dimen/gameoption_button_margin_top</item>-->
+        <!--<item name="android:layout_marginBottom">@dimen/gameoption_button_margin_bottom</item>-->
+        <!--<item name="android:layout_marginStart">@dimen/gameoption_button_margin_start</item>-->
+        <!--<item name="android:layout_marginEnd">@dimen/gameoption_button_margin_end</item>-->
+    <!--</style>-->
+
+
+
+
+</resources>

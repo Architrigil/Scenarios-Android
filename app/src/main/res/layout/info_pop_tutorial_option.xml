@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/popup_info_back_ground">
+
+    <TextView
+        android:id="@+id/tv_info_pop_version_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/version"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_info_pop_version_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_marginStart="4dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/tv_info_pop_version_label"
+        app:layout_constraintStart_toEndOf="@+id/tv_info_pop_version_label"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_info_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@id/tv_info_pop_version_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_pop_version_colon"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/tv_pop_content_source_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/content_source"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_pop_version_label"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pop_content_source_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:text=":"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/tv_pop_content_source_label"
+        app:layout_constraintStart_toEndOf="@+id/tv_pop_content_source_label"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_pop_content_source_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@id/tv_pop_content_source_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_pop_content_source_colon"
+        tools:text="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

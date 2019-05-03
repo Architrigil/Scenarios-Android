@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/flip_for_question"
+        android:width="@dimen/iv_flip_question_width"
+        android:height="@dimen/flip_image_height"
+
+        />
+</layer-list >

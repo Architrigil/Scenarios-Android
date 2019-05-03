@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_margin_top_game"
+        app:cardCornerRadius="@dimen/cad_corner_radius_game"
+        app:layout_constraintEnd_toStartOf="@id/guideline_final_score_evaluation_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_final_score_evaluation_left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/question_text_game_padding"
+                android:paddingStart="@dimen/question_text_game_padding"
+                android:text="@string/score"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/question_game_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_question_image"
+                android:layout_width="@dimen/question_image_game_width"
+                android:layout_height="@dimen/question_image_game_width"
+                android:src="@drawable/play_btn" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/iv_start_button_game"
+        android:layout_width="@dimen/game_buttons_width"
+        android:layout_height="@dimen/game_buttons_height"
+        android:layout_marginTop="@dimen/margin_game_rv_top"
+        android:background="@drawable/game_buttons"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textSize="@dimen/game_buttons_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_question" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_question_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_game_rv_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_final_score_evaluation_right"
+        app:layout_constraintStart_toEndOf="@id/guideline_final_score_evaluation_left"
+        app:layout_constraintTop_toBottomOf="@id/cv_question"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_final_score_evaluation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_final_score_evaluation_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5d15a</color>
+    <color name="colorPrimaryDark">#e3a844</color>
+    <color name="colorAccent">@android:color/white</color>
+    <color name="game_screen_buttons_color">#29a6f9</color>
+    <color name="trivia_orangish_color">#da933a</color>
+    <color name="trivia_yellowish_color">#f5d15a</color>
+    <color name="trivia_grayish_background">#eaeaea</color>
+    <color name="black">#000000</color>
+    <color name="grayish">#d3d3d3</color>
+</resources>

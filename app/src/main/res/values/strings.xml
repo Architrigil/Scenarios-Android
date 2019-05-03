@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="review">Review</string>
+    <string name="title">Title</string>
+    <string name="type_the_correct_answer">Type the correct answer</string>
+    <string name="submit">Done</string>
+    <string name="score">Score</string>
+    <string name="final_score">Final Score</string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="random_question_instance">1/3</string>
+    <string name="timer">time</string>
+    <string name="complete">Complete</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Devices</string>
+    <string name="button_scan">Scan</string>
+    <string name="none_paired">None Paired</string>
+    <string name="none_found">None Found</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="game_name">Scenarios</string>
+    <string name="replay">Replay</string>
+    <string name="end_game">End</string>
+</resources>
