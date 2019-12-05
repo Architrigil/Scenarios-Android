@@ -67,13 +67,15 @@ ext {
     expressoVersion = '3.0.2'
 
     // MOGCore
-    mogcoreVersion = "0.1.6.14"
+    mogcoreVersion = "0.1.6.23"
 
     // SGAnalytics
     sgAnalyticsVersion = "0.0.5"
 
     // timber
     timberVersion = "4.7.0"
+
+    MOGCoreReactNativeAndSupportLibsVersion = "0.2.7"
 
     // nearby
     nearbyVersion = "16.0.0"
