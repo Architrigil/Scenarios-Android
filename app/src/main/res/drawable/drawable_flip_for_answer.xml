@@ -3,7 +3,7 @@
     <item
         android:drawable="@drawable/flip_for_question"
         android:width="@dimen/iv_flip_question_width"
-        android:height="@dimen/flip_image_height"
+        android:height="50dp"
 
         />
 </layer-list >

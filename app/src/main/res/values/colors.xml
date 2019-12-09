@@ -9,4 +9,18 @@
     <color name="trivia_grayish_background">#eaeaea</color>
     <color name="black">#000000</color>
     <color name="grayish">#d3d3d3</color>
+
+    <!-- iOS app colors-->
+    <color name="greenGradientStart">#009051</color> <!-- RGB 0 144 81 -->
+    <color name="greenGradientEnd">#009193</color> <!-- RGB 0 145 147 -->
+    <color name="blueGradientStart">#1497FC</color> <!-- RGB 20 151 252 -->
+    <color name="blueGradientEnd">#0065C1</color> <!-- RGB 0 101 193 -->
+    <color name="redGradientStart">#D45954</color> <!-- RGB 212 89 84 -->
+    <color name="redGradientEnd">#900C04</color> <!-- RGB 114 12 4 -->
+    <color name="greyGradientStart">#DCDEE0</color> <!-- RGB 220 222 224 -->
+    <color name="greyGradientEnd">#FFFFFF</color> <!-- RGB 255 255 255 -->
+    <color name="orange">#E98269</color> <!-- RGB 233 130 105 -->
+    <color name="yellow">#FDCB7E</color> <!-- RGB 253 203 126-->
+    <color name="light_dark_transparent">#40514f4f</color>
+
 </resources>

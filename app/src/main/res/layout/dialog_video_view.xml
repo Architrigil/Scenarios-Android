@@ -7,41 +7,41 @@
     android:focusableInTouchMode="true"
     android:padding="@dimen/video_view_padding">
 
-    <VideoView
-        android:id="@+id/vv_video"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <VideoView-->
+<!--        android:id="@+id/vv_video"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <ImageView
-        android:id="@+id/iv_cancel"
-        android:layout_width="@dimen/width_cancel_icon"
-        android:layout_height="@dimen/width_cancel_icon"
-        android:background="#10000000"
-        android:src="@android:drawable/ic_menu_close_clear_cancel"
-        app:layout_constraintStart_toStartOf="@id/vv_video"
-        app:layout_constraintTop_toTopOf="@id/vv_video" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_cancel"-->
+<!--        android:layout_width="@dimen/width_cancel_icon"-->
+<!--        android:layout_height="@dimen/width_cancel_icon"-->
+<!--        android:background="#10000000"-->
+<!--        android:src="@android:drawable/ic_menu_close_clear_cancel"-->
+<!--        app:layout_constraintStart_toStartOf="@id/vv_video"-->
+<!--        app:layout_constraintTop_toTopOf="@id/vv_video" />-->
 
-    <ImageView
-        android:id="@+id/iv_play_pause"
-        android:layout_width="@dimen/width_cancel_icon"
-        android:layout_height="@dimen/width_cancel_icon"
-        android:background="#10000000"
-        android:padding="2dp"
-        android:src="@android:drawable/ic_media_pause"
-        app:layout_constraintBottom_toBottomOf="@id/vv_video"
-        app:layout_constraintEnd_toEndOf="@id/vv_video"
-        app:layout_constraintStart_toStartOf="@id/vv_video" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_play_pause"-->
+<!--        android:layout_width="@dimen/width_cancel_icon"-->
+<!--        android:layout_height="@dimen/width_cancel_icon"-->
+<!--        android:background="#10000000"-->
+<!--        android:padding="2dp"-->
+<!--        android:src="@android:drawable/ic_media_pause"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/vv_video"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/vv_video"-->
+<!--        app:layout_constraintStart_toStartOf="@id/vv_video" />-->
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/width_cancel_icon"
-        android:background="#60000000"
-        app:layout_constraintBottom_toBottomOf="@id/vv_video"
-        app:layout_constraintEnd_toEndOf="@id/vv_video"
-        app:layout_constraintStart_toStartOf="@id/vv_video" />
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/width_cancel_icon"-->
+<!--        android:background="#60000000"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/vv_video"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/vv_video"-->
+<!--        app:layout_constraintStart_toStartOf="@id/vv_video" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

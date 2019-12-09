@@ -6,58 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusable="true" />
+<!--    <View-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-        <fragment
-            android:id="@+id/fragment_question_mark_animation"
-            android:name="com.rigil.scenarios.common.QuestionAnimationFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout="@layout/fragment_question_animation" />
+<!--        <fragment-->
+<!--            android:id="@+id/fragment_question_mark_animation"-->
+<!--            android:name="com.rigil.scenarios.common.QuestionAnimationFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:layout="@layout/fragment_question_animation" />-->
 
-        <fragment
-            android:id="@+id/fragment_score"
-            android:name="com.rigil.scenarios.game.GameScoreFragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_weight="0.15"
-            tools:layout="@layout/fragment_game_score" />
+<!--        <fragment-->
+<!--            android:id="@+id/fragment_score"-->
+<!--            android:name="com.rigil.scenarios.game.GameScoreFragment"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_weight="0.15"-->
+<!--            tools:layout="@layout/fragment_game_score" />-->
 
-        <fragment
-            android:id="@+id/fragment_play"
-            android:name="com.rigil.scenarios.game.GameFragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/fragment_options"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fragment_score"
-            app:layout_constraintVertical_weight="0.75"
-            tools:layout="@layout/fragment_game" />
+<!--        <fragment-->
+<!--            android:id="@+id/fragment_play"-->
+<!--            android:name="com.rigil.scenarios.game.GameFragment"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/fragment_options"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/fragment_score"-->
+<!--            app:layout_constraintVertical_weight="0.75"-->
+<!--            tools:layout="@layout/fragment_game" />-->
 
-        <fragment
-            android:id="@+id/fragment_options"
-            android:name="com.rigil.scenarios.game.GameOptionsFragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_weight="0.1"
-            tools:layout="@layout/fragment_game_options" />
+<!--        <fragment-->
+<!--            android:id="@+id/fragment_options"-->
+<!--            android:name="com.rigil.scenarios.game.GameOptionsFragment"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintVertical_weight="0.1"-->
+<!--            tools:layout="@layout/fragment_game_options" />-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 </FrameLayout>

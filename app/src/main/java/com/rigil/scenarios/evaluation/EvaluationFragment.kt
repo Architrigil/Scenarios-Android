@@ -2,11 +2,11 @@ package com.rigil.scenarios.evaluation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+//import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+//import androidx.recyclerview.widget.RecyclerView
 import com.rigil.scenarios.R
 import com.rigil.scenarios.common.GameScreenActivity
 import com.rigil.scenarios.common.ScenariosQuizDataSourceModel
@@ -20,16 +20,16 @@ class EvaluationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        iv_home.setOnClickListener {
-            requireActivity().onBackPressed()
-        }
-        rv_evaluation.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
-        val data = (requireActivity() as
-                GameScreenActivity).getAllDataRecords() as Array<ScenariosQuizDataSourceModel.Record>
-
-        val originalAnswers = arrayOfNulls<Pair<String?, String?>>(data.size)
-        val givenAnswers = arrayOfNulls<Pair<String?, String?>>(data.size)
-        val questions = arrayOfNulls<Pair<String?, String?>>(data.size)
+//        iv_home.setOnClickListener {
+//            requireActivity().onBackPressed()
+//        }
+//        rv_evaluation.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
+//        val data = (requireActivity() as
+//                GameScreenActivity).getAllDataRecords() as Array<ScenariosQuizDataSourceModel.Record>
+//
+//        val originalAnswers = arrayOfNulls<Pair<String?, String?>>(data.size)
+//        val givenAnswers = arrayOfNulls<Pair<String?, String?>>(data.size)
+//        val questions = arrayOfNulls<Pair<String?, String?>>(data.size)
         var score = 0
 //        for (i in 0 until data.size) {
 //            val dataAtIndex = data[i].fields
@@ -55,30 +55,30 @@ class EvaluationFragment : Fragment() {
 //                        }
 //                    })
 //        }
-        btn_game_options_submit.setOnClickListener {
-            saveAnswersAndNavigateToFinalScore(questions, originalAnswers, givenAnswers, score)
-        }
+//        btn_game_options_submit.setOnClickListener {
+//            saveAnswersAndNavigateToFinalScore(questions, originalAnswers, givenAnswers, score)
+//        }
     }
 
     // sends attempted questions, answers, given answers and score to final score screen
     private fun saveAnswersAndNavigateToFinalScore(questions: Array<Pair<String?, String?>?>,
                                                    answers: Array<Pair<String?, String?>?>,
                                                    givenAnswers: Array<Pair<String?, String?>?>, score: Int) {
-        val finalScoreEvaluation = FinalScoreEvaluation()
-        val bundle = Bundle()
-        bundle.putSerializable("questions", questions)
-        bundle.putSerializable("answers", answers)
-        bundle.putSerializable("givenAnswers", givenAnswers)
-        bundle.putInt("score", score)
-
-        finalScoreEvaluation.arguments = bundle
-        requireActivity().supportFragmentManager
-                .beginTransaction().remove(this).commit()
-        requireActivity().supportFragmentManager
-                .beginTransaction().setCustomAnimations(com.rigil.mogcorelib.R.anim.slide_in_bottom, com.rigil.mogcorelib.R.anim.slide_out_bottom,
-                        com.rigil.mogcorelib.R.anim.slide_in_bottom, com.rigil.mogcorelib.R.anim.slide_out_bottom)
-                .add((requireActivity() as GameScreenActivity).getFragmentViewId(), finalScoreEvaluation)
-                .addToBackStack(null)
-                .commit()
+//        val finalScoreEvaluation = FinalScoreEvaluation()
+//        val bundle = Bundle()
+//        bundle.putSerializable("questions", questions)
+//        bundle.putSerializable("answers", answers)
+//        bundle.putSerializable("givenAnswers", givenAnswers)
+//        bundle.putInt("score", score)
+//
+//        finalScoreEvaluation.arguments = bundle
+//        requireActivity().supportFragmentManager
+//                .beginTransaction().remove(this).commit()
+//        requireActivity().supportFragmentManager
+//                .beginTransaction().setCustomAnimations(com.rigil.mogcorelib.R.anim.slide_in_bottom, com.rigil.mogcorelib.R.anim.slide_out_bottom,
+//                        com.rigil.mogcorelib.R.anim.slide_in_bottom, com.rigil.mogcorelib.R.anim.slide_out_bottom)
+//                .add((requireActivity() as GameScreenActivity).getFragmentViewId(), finalScoreEvaluation)
+//                .addToBackStack(null)
+//                .commit()
     }
 }

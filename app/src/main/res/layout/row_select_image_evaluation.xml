@@ -2,30 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="@dimen/alert_padding">
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iv_select_image_alert_evaluation"
-        android:layout_width="@dimen/select_image_size"
-        android:layout_height="@dimen/select_image_size"
-        android:src="@drawable/play_btn"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_select_image_alert_evaluation"-->
+<!--        android:layout_width="@dimen/select_image_size"-->
+<!--        android:layout_height="@dimen/select_image_size"-->
+<!--        android:src="@drawable/play_btn"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <CheckedTextView
-        android:id="@+id/ctv_select_image_alert_evaluation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checkMark="?android:listChoiceIndicatorMultiple"
-        android:checked="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
+<!--    <CheckedTextView-->
+<!--        android:id="@+id/ctv_select_image_alert_evaluation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:checkMark="?android:listChoiceIndicatorMultiple"-->
+<!--        android:checked="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

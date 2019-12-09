@@ -5,30 +5,30 @@
     android:id="@+id/cl_container"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_devices_available"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.06"
-        android:background="@color/colorPrimaryDark"
-        android:paddingLeft="5dp"
-        android:text="Devices"
-        android:textColor="#fff"
-        android:visibility="gone"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/tv_devices_available"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintHeight_percent="0.06"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:paddingLeft="5dp"-->
+<!--        android:text="Devices"-->
+<!--        android:textColor="#fff"-->
+<!--        android:visibility="gone"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_devices"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.35"
-        android:stackFromBottom="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_paired_devices" />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_devices"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintHeight_percent="0.35"-->
+<!--        android:stackFromBottom="true"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/title_paired_devices" />-->
 
 
 

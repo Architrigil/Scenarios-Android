@@ -6,12 +6,12 @@ import android.net.Uri
 import androidx.core.content.FileProvider
 import android.view.View
 import android.widget.ImageView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.rigil.mogcorelib.common.database.GameDao_Impl
-import com.rigil.mogcorelib.common.database.GameDatabase
-import com.rigil.mogcorelib.utils.loadGlideImage
-import io.reactivex.schedulers.Schedulers
+//import com.bumptech.glide.Glide
+//import com.bumptech.glide.request.RequestOptions
+//import com.rigil.mogcorelib.common.database.GameDao_Impl
+//import com.rigil.mogcorelib.common.database.GameDatabase
+//import com.rigil.mogcorelib.utils.loadGlideImage
+//import io.reactivex.schedulers.Schedulers
 import java.io.File
 import java.net.URL
 
@@ -23,19 +23,19 @@ fun loadImageFromDb(fileName: String?, imageView: ImageView, context: Context) {
         return
     }
     imageView.visibility = View.VISIBLE
-    val gameDao = GameDao_Impl(GameDatabase.getInstance(context))
-    val imageUrlId = fileName.split("/").last()
-    if (gameDao.blobDataCount(imageUrlId).blockingFirst() > 0) {
-        val byteArray = gameDao.getBlobData(imageUrlId)
-                .subscribeOn(Schedulers.io())
-                .blockingFirst().file
-        Glide.with(imageView)
-                .load(byteArray)
-                .into(imageView)
-    } else {
-        Glide.with(imageView).clear(imageView)
-        imageView.loadGlideImage(fileName)
-    }
+//    val gameDao = GameDao_Impl(GameDatabase.getInstance(context))
+//    val imageUrlId = fileName.split("/").last()
+//    if (gameDao.blobDataCount(imageUrlId).blockingFirst() > 0) {
+//        val byteArray = gameDao.getBlobData(imageUrlId)
+//                .subscribeOn(Schedulers.io())
+//                .blockingFirst().file
+//        Glide.with(imageView)
+//                .load(byteArray)
+//                .into(imageView)
+//    } else {
+//        Glide.with(imageView).clear(imageView)
+//        imageView.loadGlideImage(fileName)
+//    }
 }
 
 
@@ -58,18 +58,18 @@ fun loadVideoImageThumbnail(context: Context, imageView: ImageView, filePath: St
         imageView.visibility = View.GONE
         return
     }
-    imageView.visibility = View.VISIBLE
-    val fileName = filePath.split("/").last()
-    val dirPath = imageView.context.getExternalFilesDir(null).path + File.separator
-    val file = File(dirPath + fileName)
-    val uri: Uri = FileProvider.getUriForFile(imageView.context,
-            imageView.context.packageName + ".provider", file)
-    val interval = 100
-    val options = RequestOptions().frame(interval.toLong())
-    Glide.with(context).asBitmap()
-            .load(uri)
-            .apply(options)
-            .into(imageView)
+//    imageView.visibility = View.VISIBLE
+//    val fileName = filePath.split("/").last()
+//    val dirPath = imageView.context.getExternalFilesDir(null).path + File.separator
+//    val file = File(dirPath + fileName)
+//    val uri: Uri = FileProvider.getUriForFile(imageView.context,
+//            imageView.context.packageName + ".provider", file)
+//    val interval = 100
+//    val options = RequestOptions().frame(interval.toLong())
+//    Glide.with(context).asBitmap()
+//            .load(uri)
+//            .apply(options)
+//            .into(imageView)
 }
 
 

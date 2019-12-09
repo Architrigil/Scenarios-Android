@@ -9,24 +9,24 @@
     card:layout_constraintBottom_toBottomOf="parent"
     card:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/alert_padding"
-        android:paddingTop="@dimen/alert_padding"
-        android:background="@color/gray_select_game_bg">
+<!--    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingBottom="@dimen/alert_padding"-->
+<!--        android:paddingTop="@dimen/alert_padding"-->
+<!--        android:background="@color/gray_select_game_bg">-->
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_select_image_evaluation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/gray_select_game_bg"
-            android:padding="@dimen/alert_recycler_padding"
-            android:visibility="visible"
-            app:layout_constraintTop_toBottomOf="@+id/tv_select_image" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recycler_view_select_image_evaluation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/gray_select_game_bg"-->
+<!--            android:padding="@dimen/alert_recycler_padding"-->
+<!--            android:visibility="visible"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_select_image" />-->
 
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 </androidx.cardview.widget.CardView>

@@ -4,205 +4,204 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frame_gamemenuactivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.rigil.scenarios.common.GameScreenActivity">
+    android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/fragment_question_mark_animation"
-        android:name="com.rigil.scenarios.common.QuestionAnimationFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_question_animation" />
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_question_mark_animation"-->
+<!--        android:name="com.rigil.scenarios.common.QuestionAnimationFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout="@layout/fragment_question_animation" />-->
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/topbar_frame"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/trivia_game_menu_top_bar_height"
-            android:background="@color/menu_top_bar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/topbar_frame"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/trivia_game_menu_top_bar_height"-->
+<!--            android:background="@color/menu_top_bar"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
 
-            <TextView
-                android:id="@+id/tv_gamemenu_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/gamemenu_title_margin_start"
-                android:layout_marginTop="@dimen/gamemenu_title_margin_top"
-                android:layout_marginBottom="@dimen/gamemenu_title_margin_top"
-                android:text="@string/game_name"
-                android:textStyle="bold"
-                android:textSize="@dimen/gamemenu_title_text_size"
-                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"
-                app:layout_constraintStart_toStartOf="@+id/topbar_frame"
-                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_gamemenu_title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/gamemenu_title_margin_start"-->
+<!--                android:layout_marginTop="@dimen/gamemenu_title_margin_top"-->
+<!--                android:layout_marginBottom="@dimen/gamemenu_title_margin_top"-->
+<!--                android:text="@string/game_name"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="@dimen/gamemenu_title_text_size"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />-->
 
-            <TextView
-                android:id="@+id/tv_gamemenu_title_practice_set"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="@dimen/gamemenu_title_margin_top"
-                android:layout_marginBottom="@dimen/gamemenu_title_margin_top"
-                android:text="Trivia"
-                android:textSize="@dimen/gamemenu_title_text_size"
-                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"
-                app:layout_constraintStart_toEndOf="@+id/tv_gamemenu_title"
-                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_gamemenu_title_practice_set"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="@dimen/gamemenu_title_margin_top"-->
+<!--                android:layout_marginBottom="@dimen/gamemenu_title_margin_top"-->
+<!--                android:text="Trivia"-->
+<!--                android:textSize="@dimen/gamemenu_title_text_size"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/tv_gamemenu_title"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />-->
 
-            <Button
-                android:id="@+id/ivbtn_gamemenu_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/main_menu_button_margin"
-                android:layout_marginTop="@dimen/main_menu_button_margin"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="@dimen/main_menu_button_margin"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/drawable_profile_button"
-                android:drawableTint="@color/white"
-                android:text="@string/profile"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"
-                app:layout_constraintEnd_toEndOf="@+id/topbar_frame"
-                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />
+<!--            <Button-->
+<!--                android:id="@+id/ivbtn_gamemenu_profile"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/main_menu_button_margin"-->
+<!--                android:layout_marginTop="@dimen/main_menu_button_margin"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginBottom="@dimen/main_menu_button_margin"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:drawableTop="@drawable/drawable_profile_button"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:text="@string/profile"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />-->
 
-            <Button
-                android:id="@+id/btn_gamemenu_leaderboard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/main_menu_button_margin"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/drawable_leader_board_button"
-                android:drawableTint="@color/white"
-                android:text="@string/leaderboard"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"
-                app:layout_constraintEnd_toStartOf="@+id/ivbtn_gamemenu_profile"
-                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_gamemenu_leaderboard"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/main_menu_button_margin"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:drawableTop="@drawable/drawable_leader_board_button"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:text="@string/leaderboard"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/topbar_frame"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/ivbtn_gamemenu_profile"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/topbar_frame" />-->
 
-            <Button
-                android:id="@+id/btn_gamemenu_reference"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/main_menu_button_margin"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/drawable_reference_button"
-                android:drawableTint="@color/white"
-                android:text="@string/reference"
-                android:textColor="@color/white"
-                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"
-                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_leaderboard" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_gamemenu_reference"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/main_menu_button_margin"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:drawableTop="@drawable/drawable_reference_button"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:text="@string/reference"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_leaderboard" />-->
 
-            <Button
-                android:id="@+id/btn_gamemenu_evaluate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/main_menu_button_margin"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/drawable_evaluate_button"
-                android:drawableTint="@color/white"
-                android:text="@string/evaluate"
-                android:textColor="@color/white"
-                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"
-                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_reference" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_gamemenu_evaluate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/main_menu_button_margin"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:drawableTop="@drawable/drawable_evaluate_button"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:text="@string/evaluate"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_reference" />-->
 
-            <Button
-                android:id="@+id/btn_gamemenu_review"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/main_menu_button_margin"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/drawable_review_button"
-                android:drawableTint="@color/white"
-                android:text="@string/review"
-                android:textColor="@color/white"
-                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"
-                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_evaluate" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_gamemenu_review"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/main_menu_button_margin"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:drawableTop="@drawable/drawable_review_button"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:text="@string/review"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@+id/btn_gamemenu_leaderboard"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/btn_gamemenu_evaluate" />-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/menu_top_bar"
-            android:visibility="gone"
-            app:itemIconTint="@color/optionButton"
-            app:itemTextColor="@color/optionButton"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@layout/bottom_bar_menu" />
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_navigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:background="@color/menu_top_bar"-->
+<!--            android:visibility="gone"-->
+<!--            app:itemIconTint="@color/optionButton"-->
+<!--            app:itemTextColor="@color/optionButton"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:menu="@layout/bottom_bar_menu" />-->
 
-        <TextView
-            android:id="@+id/iv_trivia_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/armtb"
-            android:text="@string/game_name"
-            android:textSize="@dimen/trivia_label_textsize"
-            android:layout_marginBottom="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/iv_play_button" />
+<!--        <TextView-->
+<!--            android:id="@+id/iv_trivia_label"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/armtb"-->
+<!--            android:text="@string/game_name"-->
+<!--            android:textSize="@dimen/trivia_label_textsize"-->
+<!--            android:layout_marginBottom="40dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/iv_play_button" />-->
 
-        <Button
-            android:id="@+id/iv_play_button"
-            android:layout_width="@dimen/game_buttons_width"
-            android:layout_height="@dimen/game_buttons_height"
-            android:layout_marginTop="@dimen/play_button_margin_top"
-            android:background="@drawable/game_buttons"
-            android:text="Play!"
-            android:textAllCaps="false"
-            android:textSize="@dimen/game_buttons_textsize"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/topbar_frame"
-            app:layout_constraintBottom_toBottomOf="parent" />
+<!--        <Button-->
+<!--            android:id="@+id/iv_play_button"-->
+<!--            android:layout_width="@dimen/game_buttons_width"-->
+<!--            android:layout_height="@dimen/game_buttons_height"-->
+<!--            android:layout_marginTop="@dimen/play_button_margin_top"-->
+<!--            android:background="@drawable/game_buttons"-->
+<!--            android:text="Play!"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="@dimen/game_buttons_textsize"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/topbar_frame"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent" />-->
 
-        <ImageView
-            android:id="@+id/iv_main_info"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="10dp"
-            android:tint="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_info_outline_black_24dp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_main_info"-->
+<!--            android:layout_width="32dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:tint="@android:color/white"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_info_outline_black_24dp" />-->
 
-        <ProgressBar
-            android:id="@+id/progressbar_game_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="2dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressbar_game_main"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:elevation="2dp"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_game_options_button_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent=".75" />
+<!--        <androidx.constraintlayout.widget.Guideline-->
+<!--            android:id="@+id/guideline_game_options_button_top"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintGuide_percent=".75" />-->
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_game_buttons_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent=".25" />
+<!--        <androidx.constraintlayout.widget.Guideline-->
+<!--            android:id="@+id/guideline_game_buttons_top"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintGuide_percent=".25" />-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 </FrameLayout>

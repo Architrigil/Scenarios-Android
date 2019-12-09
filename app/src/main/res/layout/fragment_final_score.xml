@@ -4,98 +4,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_final_score_evaluation_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".1" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_final_score_evaluation_left"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent=".1" />-->
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_final_score_evaluation_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent=".9" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_final_score_evaluation_right"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent=".9" />-->
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:clickable="true"
-        android:focusable="true" />
+<!--    <View-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_game_top_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".2" />
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_game_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".05" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_game_top_header"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent=".2" />-->
 
 
-    <ImageView
-        android:id="@+id/iv_home_final_score"
-        android:layout_width="@dimen/gamemenu_profile_image_width"
-        android:layout_height="@dimen/gamemenu_profile_image_width"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_game_top"
-        app:srcCompat="@drawable/home_button" />
-
-    <TextView
-        android:id="@+id/tv_screen_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/final_score"
-        android:textSize="@dimen/title_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_game_top" />
-
-    <View
-        android:id="@+id/line"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/guideline_game_top_header" />
-
-    <TextView
-        android:id="@+id/tv_score_final_evaluation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/score"
-        android:textSize="@dimen/title_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_game_top"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent=".05" />-->
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_final_score"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/margin_score_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/guideline_final_score_evaluation_right"
-        app:layout_constraintStart_toEndOf="@id/guideline_final_score_evaluation_left"
-        app:layout_constraintTop_toBottomOf="@id/tv_score_final_evaluation" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_home_final_score"-->
+<!--        android:layout_width="@dimen/gamemenu_profile_image_width"-->
+<!--        android:layout_height="@dimen/gamemenu_profile_image_width"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:contentDescription="@null"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guideline_game_top"-->
+<!--        app:srcCompat="@drawable/home_button" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_screen_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/final_score"-->
+<!--        android:textSize="@dimen/title_text_size"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guideline_game_top" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/line"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_weight="1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guideline_game_top_header" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_score_final_evaluation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/score"-->
+<!--        android:textSize="@dimen/title_text_size"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/line" />-->
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_final_score"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="@dimen/margin_score_text"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/guideline_final_score_evaluation_right"-->
+<!--        app:layout_constraintStart_toEndOf="@id/guideline_final_score_evaluation_left"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_score_final_evaluation" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
