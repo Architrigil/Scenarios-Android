@@ -75,7 +75,7 @@ class GameScreenActivity : GameMenuBaseActivity() {
         popupWindow = PopupWindow(layoutInflater.inflate(R.layout.info_pop_tutorial_option, null)).apply {
             height = ViewGroup.LayoutParams.WRAP_CONTENT
             width = ViewGroup.LayoutParams.WRAP_CONTENT
-            contentView.tv_pop_content_source_version.text = BuildConfig.BASE_URL
+            contentView.tv_pop_content_source_version.text = ""  //BuildConfig.BASE_URL
             contentView.tv_info_version.text = BuildConfig.VERSION_NAME
             isOutsideTouchable = true
         }
@@ -306,11 +306,11 @@ class GameScreenActivity : GameMenuBaseActivity() {
     }
 
     override fun getBaseUrl(): String {
-        return BuildConfig.BASE_URL
+        return ""// BuildConfig.BASE_URL
     }
 
     override fun getBaseAuthKey(): String {
-        return BuildConfig.AUTH_VALUE
+        return "" //BuildConfig.AUTH_VALUE
     }
 
 
